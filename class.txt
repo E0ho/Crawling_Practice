@@ -1,0 +1,72 @@
+1. requeset
+
+- HTTP 통신을 위한 파이썬 라이브러리
+- get 요청(서보에서 정보를 가져오는 역할)
+- post 요청(서버로 정보를 전송하여 서버의 정보를 수정하거나 입력하는 역할)
+
+pip install requests //(request 라이브러리 설치)
+
+import requests // 라이브러리 소스파일로 가져오기
+
+response = requests.get("https://www.naver.com")    //get요청
+html = response.text //*****응답.text에 html 코드가 들어있다*****
+print(html)
+
+----------------------
+2. beautifulsoup
+
+- HTML 분석을 위한 파이썬 라이브러리
+
+pip install beautifulsoup4
+
+from bs4 import beautifulsoup
+
+soup = Beautifulsoup(html 코드, 'html.번역기')
+word = soup.select_one("#id")
+print (word.text)
+
+--------------------
+<선택자 선택하기>
+
+soup.select('선택자')
+-태그 선택자: 태그
+-id 선택자: #id
+-class 선택자: .class
+-자식 선택자 : (부모) > (원하는 선택자)
+
+여러개를 한번에 가져올 때는 List 형태로 저장
+
+
+
+text = list.text            #text값을 가져온다
+url = list.a.attrs['href']    #href 속성값을 가져온다.
+
+
+url이란?
+인터넷 주소 형식(Protocol-domain-path-parameter)
+protocol : https / http
+domain : IP주소의 이름을 부여한것
+path : 서버에서 해당 페이지의 경로
+parameter(?뒷부분) : 서버의 추가적인 정보를 제공// key+value로 이루어짐/ &로 구분 / query="값" 이 검색어를 의미
+
+
+pyautogui
+마우스,키보드 매크로 라이브러리 (간단한 입력 창 띄우기)
+
+pip install pyautogui
+
+import pyautogui
+pyautogui.prompt("검색어를 입력하세요")
+
+
+
+반복문
+for i in range(시작, 끝, 단계):
+
+
+
+openpyxl 라이브러리
+
+파이썬에서 엑셀을 쉽게 다룰 수 있도록 도와주는 library
+
+pip install openpyxl
