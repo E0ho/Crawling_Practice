@@ -1,3 +1,5 @@
+# 실시간 주가 정보 엑셀 자동화 실습
+
 import requests
 from bs4 import BeautifulSoup
 import openpyxl

@@ -1,3 +1,5 @@
+# 네이버 페이지 클롤링 실습
+
 import requests
 from bs4 import BeautifulSoup
 

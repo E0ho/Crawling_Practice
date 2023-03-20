@@ -1,3 +1,5 @@
+# 주가 정보 호출 실습
+
 import requests
 from bs4 import BeautifulSoup
 

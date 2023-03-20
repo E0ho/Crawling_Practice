@@ -1,3 +1,5 @@
+# URL Parameter 실시간 입력 실습
+
 import requests
 from bs4 import BeautifulSoup
 

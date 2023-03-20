@@ -1,3 +1,5 @@
+# 반복문을 활용한 URL 페이지 자동 변경 실습
+
 import requests
 from bs4 import BeautifulSoup
 import pyautogui
